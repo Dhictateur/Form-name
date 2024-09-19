@@ -4,6 +4,10 @@
 
 package com.mycompany.test;
 
+import java.lang.ProcessBuilder.Redirect.Type;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -16,9 +20,13 @@ public class Test {
         var separacion = "------------------------------------";
         Scanner scanner = new Scanner(System.in);
         int option;
+        
+        ArrayList<String> user_names= new ArrayList<>(Arrays.asList("Joel", "Manu"));
+        
+        
         do {
-            System.out.println("Pulsa 1 para continuar:");
-            System.out.println("Pulsa 2 para cerrar:");
+            System.out.println("Pulsa 1 para iniciar sesion:");
+            System.out.println("Pulsa 3 para cerrar:");
             System.out.println(separacion);
 
             option = scanner.nextInt();
@@ -26,7 +34,7 @@ public class Test {
 
             switch (option) {
                 case 1:
-                    System.out.println("Introduce tu nombre:");
+                    System.out.println("Introduce nombre de usuario:");
                     String nombre = scanner.nextLine();
                     System.out.println("Tu nombre es: " + nombre);
                     System.out.println(separacion);
