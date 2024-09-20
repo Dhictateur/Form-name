@@ -13,6 +13,7 @@ import java.util.Scanner;
  */
 public class Test {
     static private String separacion = "------------------------------------";
+    static private String prueba = "Test-Git";
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int option;
